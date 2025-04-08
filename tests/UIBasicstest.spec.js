@@ -60,7 +60,7 @@ test('UI Controls', async ({page})=>
   });
 
 
-  test.only('Child windows hadl', async ({browser})=>
+  test('Child windows hadl', async ({browser})=>
   {
     //to open a new page through a link or any clikable items & split to get the mail
     const context = await browser.newContext();
