@@ -20,7 +20,7 @@ export default defineConfig({
     //to create screen shoot for everystep 
     screenshot: 'on',
     //to create reports for each step 
-    trace: 'on'
+    trace: 'retain-on-failure'
 
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
