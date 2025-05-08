@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"test": "npx playwright test tests/WebApiPart1.spec.js --headed"},
+  "scripts": {
+    "test": "npx playwright test tests/WebApiPart1.spec.js --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.51.1",
-    "@types/node": "^22.14.0"
+    "@types/node": "^22.14.0",
+    "allure-playwright": "^3.2.1"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0"
   }
 }
