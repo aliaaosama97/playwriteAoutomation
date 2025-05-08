@@ -1,7 +1,8 @@
 const {test, expect} = require('@playwright/test');
 const { Locator } = require('puppeteer');
 
-
+//test.describe.configure({mode:'parallel'}) //to run the test inside in parallel
+//test.describe.configure({mode:'serial'}) // to run the test if they depends on each other if one failed the rest is ignored 
 //chapter 9 
 test("Popup validations",async ({page}) => {
   await page.goto("https://rahulshettyacademy.com/AutomationPractice/");

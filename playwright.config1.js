@@ -7,6 +7,8 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  retries: 1, //retry the tests 
+  workers: 1, //only one test file will run without it all files will run paraller 
   timeout: 30 *1000,
   expect: {
     timeout: 5000
